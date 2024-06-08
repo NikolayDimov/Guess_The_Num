@@ -2,9 +2,9 @@ import { TextInput, View, StyleSheet, Alert, Text } from "react-native";
 import Colors from "../../constants/colors";
 
 
-function IntructionText({ children }) {
+function IntructionText({ children, style }) {
     return (
-        <Text style={styles.instructionText}>{children}</Text>
+        <Text style={[styles.instructionText, style]}>{children}</Text>
     );
 };
 
